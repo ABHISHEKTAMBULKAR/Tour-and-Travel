@@ -1,0 +1,22 @@
+﻿.ddl 
+{
+    width:168px;height:26px;
+}
+.lb 
+{
+font-family:Elephant;font-size:24px;
+}
+.tb 
+
+{
+    height:20px;width:165px;position:relative;
+    
+}
+.but 
+{
+    text-align:center;width:120px;font-family:Elephant;border-radius:6px;color:pink;background-color:black;
+}
+.rs
+{
+     font-size:large; color:Black; font-style:oblique;
+}

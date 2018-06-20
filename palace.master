@@ -1,0 +1,238 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="palace.master.cs" Inherits="palace" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Design Demo</title>
+<style type="text/css">
+body
+{
+  margin:0px;
+
+}
+#fulldiv
+{
+   width:100%; height:auto; margin:0px;
+   background-image:url(images/bg-pattern.jpg);
+   
+}
+
+#bodydiv
+{
+ border:1px solid #000000; height:auto; width;70%;
+  margin-left:150px; margin-right:150px; background-color:#FFFFFF;
+}
+#head
+{
+  height:auto; width:100%;
+}
+#tophead
+{
+ height:30px; width:100%; 
+}
+.acls
+{
+ 
+ font-family: 'Roboto', sans-serif;
+	background-color:#00B895; 
+	text-decoration:none;
+	text-transform: uppercase;
+	padding:7px 15px; float:right;
+	font-size:.8em;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	border-radius: 4px 4px;
+	margin-right:10px;
+	color:#fff;
+ }
+ .acls a
+ {
+     color:#fff;
+     text-decoration:none;
+     font-family: 'Roboto', sans-serif;
+     text-transform: uppercase;
+     }
+#leftdiv
+{
+   width:60%; height:100%;  float:left; margin:0px;
+}
+#rightdiv
+{
+ height:100%; width:40%; float:left;
+}
+
+#menudiv
+{
+ height:80px; width:100%; background-image:url("images/000.jpg");
+}
+#menuleft1
+{
+ height:100%; width:710px;  float:left; 
+}
+#menuright1
+{
+ height:100%; width:332px;  float:left; 
+}
+#tbl
+{
+ height:auto; width:300px; background-color:#009966; margin:15px; margin-left:30px;
+}
+.bcls
+{
+ height:99%; float:left; border:1px thin #000000;  width:130px; text-align:center; background-color:
+}
+.aclsa
+{
+     text-align:center; 
+	font: bold 16px/80px Arial, Helvetica, sans-serif;
+	text-decoration: none;text-transform: uppercase; text-align:center; margin-top:45px;
+   color:Black;
+}
+#demodiv:hover
+{
+  background-color:#45B39E;
+}
+.bcls1
+{
+ height:39px; width:80px; float:left; margin-left:35px;
+}
+.aclsa1
+{
+ font: bold 16px/30px Arial, Helvetica, sans-serif; text-align:center; text-decoration: none; font:Georgia, "Times New Roman", Times, serif;
+}
+/*----special-grid------*/
+.special-grid {
+	float: left;
+	width: 32%;
+	margin-left:100px;
+	text-align: center;
+}
+.special-grid img{
+	width:100%; margin-top:30px;
+}
+.special-grid a{
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-family: 'Roboto', sans-serif;
+	color:#5F5F5F;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	padding: 0.3em 0;
+	display: block;
+	text-decoration:none;
+}
+.special-grid a:hover{
+	color: #009175;
+}
+.spe-grid{
+	margin: 0px;
+}
+.specials-grids {
+	padding: 0 0;
+}
+.lb
+{
+ font-size:large; color:White; font-style:oblique;   
+  }
+</style>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+  
+<div id="fulldiv" >
+  <div id="bodydiv">
+    <div id="Div1">
+        <div id="tophead">
+		  <div id="leftdiv">
+		  <div id="DIV2" runat="server" style=" height:50px; width:100%;">
+</div>
+
+		  </div>
+		
+		   <div id="rightdiv">
+		   <div class="acls"><a href="SignUp.aspx"  >Sign Up</a></div>
+		   <div id="abt" class="acls"><a href="Aboutus.aspx"  >About Us</a></div>
+           <div class="acls"><a href="registration.aspx"  >Log in</a></div>
+		   </div>
+		
+		</div>
+	   <div id="menudiv">
+	 
+	    <div  id="menuleft1">
+		
+		   <div id="demodiv" class="bcls"><a href="Home.aspx" class="aclsa"  >Home</a></div>
+		   <div id="demodiv" class="bcls"><a href="ppackage.aspx" class="aclsa" >Package</a> </div>
+		   <div id="demodiv" class="bcls"><a href="registration.aspx" class="aclsa" >Booking</a></div>		   
+		   <div id="demodiv" class="bcls"><a href="contactus.aspx" class="aclsa" >Contact Us</a></div>
+		   <div id="demodiv" class="bcls"><a href="Cfeedback.aspx" class="aclsa" >Feedback</a></div>
+		</div>
+	 
+	     <div id="menuright1">
+	     <table id="tbl">
+		 <tr>
+		 <td><input type="text" name="subject" id="subject" placeholder="Search Your Place" style=" height:30px; width:240px;" /></td> 
+		 <td><a href="ppackage.aspx"><img src="picture/search.png" id="img1" ></img></a></td>
+		 		 </tr>
+		 </table>
+		 </div>
+	
+	   </div>
+	 
+	 </div>
+	
+	 <div id="mainbody" runat="server" style=" height:640px; width:100%; border: solid 1px #000000; background-image:url(images/);   ">
+	 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+	 </div>
+	
+	<div id="footer" style=" height:210px; width:100%; ">
+	
+	<div id="lower" style=" background-color:#66CC99; height:210px; width:100%;">
+    <center>
+    <div class="specials">
+	
+			<div class="wrap">
+	
+				<div class="specials-grids">
+			
+			<div class="special-grid">
+
+<img src="images/grids-img1.jpg" title="image-name" />
+
+<a href="ppackage.aspx">Latest Plans</a>
+
+</div>
+
+<div class="special-grid">
+
+<img src="images/grids-img2.jpg" title="image-name" />
+	
+<a href="ppackage.aspx">Pre Plans</a>
+
+	
+		</div>
+        </div>
+     </div>			
+</div>
+ </center>
+ </div>
+</div>
+	
+	</div>
+	
+	</div>
+
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="Stylesheet" href="main.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="background">
+ <div id="page">
+  <div id="header">
+    <div id="logo">
+	 <a href="#"><img src="images/images (2).jpg" alt="LOGO" height="112" width="120" /></a>
+	</div>
+	<div id="navigation">
+	 <ul>
+
+					<li><a href="#">Tour Place</a><ul> 
+                <li><a  href="State.aspx" class="clsa">state setup</a></li>
+	        <li><a  href="citysetup.aspx"  class="clsa">city setup</a></li>
+	         <li><a  href="Placesetup.aspx"  class="clsa">Place setup</a></li>
+	
+          </ul></li>
+					<li><a href="#">Package</a>
+					<ul> 
+                <li><a href="package.aspx" class="clsa" >Package list</a></li>
+                <li><a href="guidesetup.aspx" class="clsa" >Guide Setup</a></li>
+	        
+	       
+          </ul>
+					</li>
+					<li><a href="#">Transport</a>
+					 <ul> 
+                <li><a href="vcatsetup.aspx" class="clsa" >category</a></li>
+	        <li><a href="vehicalsetup.aspx" class="clsa" >vehical setup</a></li>
+          </ul>
+					</li>
+					<li><a href="#">Ticket</a>
+					 <ul> 
+                <li><a href="Bookinglist.aspx" class="clsa" >Booking List</a></li>
+	        <li><a href="Cancellation.aspx" class="clsa" >Cancellation</a></li>
+          </ul>
+					</li>
+					<li><a href="customerlist.aspx">Customer List</a>
+					<ul> 
+		
+          </ul>
+     
+					</li>
+	 				<li><a href="#">Others</a>
+					<ul> 
+         
+                <li><a href="Contactlist.aspx" class="clsa" >Contact List</a></li>
+	        <li><a href="feedback.aspx" class="clsa" >Feedback list</a></li>
+	        
+		
+          </ul>
+					</li>
+	 			   </ul>
+
+	</div>
+	
+  </div>
+  <div id="main">
+	<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+	</div>
+	
+	</div>
+	
+ </div>
+</div>
+    
+    </form>
+</body>
+.
+
+</html>

@@ -1,0 +1,96 @@
+body
+{
+ margin:0px; font-family: "Times New Roman", Times, serif;
+}
+#background
+{
+  border:1px solid #000000; background:url(images/bg-pattern.jpg); min-height:895px;
+ 
+}
+#page
+{
+  width:950px; margin:0px auto; border:1px solid #000000;height:auto;  
+}
+#header
+ {
+
+	margin-bottom: 20px; padding-top: 20px; height:200px; 
+
+}
+#logo
+ {
+	float: left;	margin-bottom: 20px;
+	margin-left: 30px;	height:110px;	width:890px;	margin-right:40px;
+	
+
+}
+#navigation
+ {
+	background:url(images/bg-navigation.png) no-repeat;
+	clear:both;	height:50px;	width:860px;	margin:0 auto;	padding:0px;
+	
+
+}
+#navigation li, #navigation li a:hover, #navigation li.selected a
+ {
+
+	background-image:url(images/bg-menu.png);background-repeat:repeat-x;
+
+}
+#navigation ul
+ { 
+	list-style: none;margin: 0;	padding: 0;
+
+}
+
+#navigation li
+ {
+
+	float: left;background-position: 0 -118px;background-repeat: no-repeat;
+	height: 49px;width: 143px;margin: 0;	padding-left: 0px;text-align: center;
+
+}
+
+#navigation li:first-child
+ {
+	background: none;	margin-left: 0;padding-left: 0;
+
+}
+
+#navigation li a 
+{
+
+	color: #fff;display: block;
+	font: bold 14px/48px Arial, Helvetica, sans-serif;
+	height: 49px;text-decoration: none;text-transform: uppercase;
+
+}
+
+#navigation li a:hover 
+{
+
+	background-position: 0 -59px;
+	color: #6d6157;
+
+}
+
+#navigation li.selected a 
+{
+	background-position: 0 0;
+	color: #e4e1bd;
+
+}
+
+#navigation ul li ul
+{
+  display:none;
+}
+#navigation ul li:hover ul
+{
+  display:block; position:absolute; height:auto; width:143px; margin:0px;background-color:#008080; 
+}
+
+#main
+{
+ margin:0px; width:auto; background-color:#FFFFFF; border:1px solid #000000; height:500px;
+}
